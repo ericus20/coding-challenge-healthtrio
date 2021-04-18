@@ -1,7 +1,12 @@
 package com.healthtrio.backend.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
 
 /**
  * Holds data access and documentation for the non-federal acute care hospital EHR adoption and use open data.
@@ -9,8 +14,11 @@ import lombok.Data;
  * @author Eric Opoku
  */
 @Data
-@Builder
-public class HospitalEHR {
+@NoArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
+public final class HospitalEHR implements Serializable {
+
+    private static final long serialVersionUID = -6657194804188908035L;
 
     /**
      * The region name for the data. This includes all 50 states and the District of Columbia.
@@ -25,6 +33,7 @@ public class HospitalEHR {
     /**
      * Percent of All Hospitals that have Adopted at least a Basic EHR with Clinician Notes.
      */
+    @JsonProperty("pct_hospitals_basic_ehr_notes")
     private double pctHospitalsBasicEhrNotes;
 
     /**
