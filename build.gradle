@@ -29,6 +29,11 @@ dependencies {
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
 
+    // Webjars
+    implementation 'org.webjars:jquery:3.6.0'
+    implementation 'org.webjars:datatables:1.10.24'
+    implementation 'org.webjars:webjars-locator:0.40'
+
     // Testing
     testImplementation 'nl.jqno.equalsverifier:equalsverifier:3.5.5'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'

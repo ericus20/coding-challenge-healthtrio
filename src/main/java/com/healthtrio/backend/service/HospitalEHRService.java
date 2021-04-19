@@ -12,7 +12,7 @@ import java.util.List;
 public interface HospitalEHRService {
 
     /**
-     * Connect to the appropriate endpoint and get, by state and in descending order,
+     * Connects to the appropriate endpoint and get, by state and in descending order,
      * the percentage of hospitals that support basic EHR notes in the year 2014.
      *
      * @return list of hospitalEHR

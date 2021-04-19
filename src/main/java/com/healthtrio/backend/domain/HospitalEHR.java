@@ -46,10 +46,4 @@ public final class HospitalEHR implements Serializable {
      */
     @JsonProperty("pct_small_hospitals_basic_ehr_notes")
     private String pctSmallHospitalsBasicEhrNotes;
-
-    /**
-     * Percent of Critical Access Hospitals that have Adopted at least a Basic EHR with Clinician Notes.
-     */
-    @JsonProperty("pct_critical_access_hospitals_basic_ehr_notes")
-    private String pctCriticalAccessHospitalsBasicEhrNotes;
 }
