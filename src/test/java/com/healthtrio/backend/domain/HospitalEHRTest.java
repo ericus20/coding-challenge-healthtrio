@@ -21,7 +21,7 @@ class HospitalEHRTest {
         ObjectMapper objectMapper = new ObjectMapper();
         HospitalEHR hospitalEHR = objectMapper.readValue(jsonString, HospitalEHR.class);
         Assertions.assertEquals("Wyoming", hospitalEHR.getRegion());
-        Assertions.assertEquals(0.68, hospitalEHR.getPctHospitalsBasicEhrNotes());
+        Assertions.assertEquals("0.68", hospitalEHR.getPctHospitalsBasicEhrNotes());
     }
 
     @Test

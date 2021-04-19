@@ -2,7 +2,6 @@ package com.healthtrio.backend.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -34,20 +33,23 @@ public final class HospitalEHR implements Serializable {
      * Percent of All Hospitals that have Adopted at least a Basic EHR with Clinician Notes.
      */
     @JsonProperty("pct_hospitals_basic_ehr_notes")
-    private double pctHospitalsBasicEhrNotes;
+    private String pctHospitalsBasicEhrNotes;
 
     /**
      * Percent of Rural Hospitals that have Adopted at least a Basic EHR with Clinician Notes.
      */
-    private double pctRuralHospitalsBasicEhrNotes;
+    @JsonProperty("pct_rural_hospitals_basic_ehr_notes")
+    private String pctRuralHospitalsBasicEhrNotes;
 
     /**
      * Percent of Small Hospitals that have Adopted at least a Basic EHR with Clinician Notes.
      */
-    private double pctSmallHospitalsBasicEhrNotes;
+    @JsonProperty("pct_small_hospitals_basic_ehr_notes")
+    private String pctSmallHospitalsBasicEhrNotes;
 
     /**
      * Percent of Critical Access Hospitals that have Adopted at least a Basic EHR with Clinician Notes.
      */
-    private double pctCriticalAccessHospitalsBasicEhrNotes;
+    @JsonProperty("pct_critical_access_hospitals_basic_ehr_notes")
+    private String pctCriticalAccessHospitalsBasicEhrNotes;
 }
