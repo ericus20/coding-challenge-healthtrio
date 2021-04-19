@@ -1,0 +1,10 @@
+com.healthtrio
+com.healthtrio.annotation
+com.healthtrio.annotation.impl
+com.healthtrio.backend.domain
+com.healthtrio.backend.service
+com.healthtrio.backend.service.impl
+com.healthtrio.config
+com.healthtrio.constant
+com.healthtrio.ui.api.v1
+com.healthtrio.ui.controller
