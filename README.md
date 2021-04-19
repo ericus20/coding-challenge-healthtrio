@@ -1,5 +1,4 @@
-## MSLC · TaxTerp Tax Tracker
-ding Challenge for Software Engineer at HealthTrio.
+## Coding Challenge for Software Engineer at HealthTrio.
 
 ## Built With
 
