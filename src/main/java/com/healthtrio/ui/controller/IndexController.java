@@ -36,6 +36,7 @@ public class IndexController {
     /**
      * The method is the root mapping.
      *
+     * @param model the model
      * @return the index page.
      */
     @Loggable

@@ -25,6 +25,7 @@ public class MethodLogger {
      * - is annotated with @Loggable.
      *
      * @param joinPoint the joinPoint
+     * @throws Throwable if anything goes wrong with execution
      * @return the log object
      */
     @Around("execution(* *(..)) && @annotation(com.healthtrio.annotation.Loggable)")
