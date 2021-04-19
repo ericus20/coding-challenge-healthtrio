@@ -15,3 +15,4 @@
 * Access application on *http://localhost:8080/*
 
 ## Accessing the running instance on Heroku
+Visit a running instance on Heroku at *https://hospital-ehr.herokuapp.com/*
